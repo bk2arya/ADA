@@ -4,7 +4,7 @@ package algorithms.sorting;
  * Author: bk2arya
  */
 public class Sorting {
-
+	
 	//Main method is just to test the different sorting techniques written here
 	public static void main(String[] args) {
 		
