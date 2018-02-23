@@ -1,17 +1,14 @@
 package algorithms.sorting;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Scanner;
-
+/*
+ * Author: bk2arya
+ */
 public class Sorting {
 
+	//Main method is just to test the different sorting techniques written here
 	public static void main(String[] args) {
 		
 		int[] array = {1,4,5,6,3,2,5,7,8,9,0,4,5};
-		
-		int[] array1 = {1,2,3,4};
 		
 		selectionSort(array);
 		bubbleSort(array);
@@ -19,28 +16,10 @@ public class Sorting {
 		//System.out.println(array.toString());
 	}
 	
-
-
-	    public static void sort(int[] num){
-	        
-	        for(int i=0;i<num.length-1;i++){
-	            for(int j=1;i<num.length;i++){
-	            
-	                if(num[i]>num[j]){
-	                    int temp = num[i];
-	                    num[i]=num[j];
-	                    num[j]=temp;
-	                }
-	        }
-	        }
-	    }
-	
-	/*private void printData() {
-		
-		
-	}*/
-	
-	private static void selectionSort(int[] array) {
+/*performs Classic Selection Sort.
+ * accepts Integer Array as argument.
+ */
+public static void selectionSort(int[] array) {
 		
 		int len = array.length;
 		int temp;
@@ -57,7 +36,10 @@ public class Sorting {
 
 	}
 	
-private static void bubbleSort(int[] array) {
+/*performs Classic Bubble Sort.
+ * accepts Integer Array as argument.
+ */
+public static void bubbleSort(int[] array) {
 		
 		int len = array.length;
 		int temp;
@@ -83,7 +65,10 @@ private static void bubbleSort(int[] array) {
 
 	}
 
-private static void insertionSort(int[] array) {
+/*performs Classic Insertion Sort.
+ * accepts Integer Array as argument.
+ */
+public static void insertionSort(int[] array) {
 	
 	//{3,1,2,4,5}
 	for(int i=1; i<array.length;i++) {
@@ -98,7 +83,6 @@ private static void insertionSort(int[] array) {
 		array[j+1]=key;
 		
 	}
-	
 }
 	
 	
