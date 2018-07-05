@@ -1,5 +1,7 @@
 package algorithms.sorting;
 
+import java.util.Collection;
+
 /*
  * Author: bk2arya
  */
@@ -9,7 +11,7 @@ public class Sorting {
 	public static void main(String[] args) {
 		
 		int[] array = {1,4,5,6,3,2,5,7,8,9,0,4,5};
-		
+		Collection c1 = null;
 		selectionSort(array);
 		bubbleSort(array);
 		//insertionSort(array);
@@ -18,6 +20,9 @@ public class Sorting {
 	
 /*performs Classic Selection Sort.
  * accepts Integer Array as argument.
+ * Time: O(n2)
+ * Space: O(1)
+ * swaps: O(n) hence used in places where least memory write operations are required
  */
 public static void selectionSort(int[] array) {
 		
@@ -38,6 +43,10 @@ public static void selectionSort(int[] array) {
 	
 /*performs Classic Bubble Sort.
  * accepts Integer Array as argument.
+ * * Time: O(n2)
+ * Space: O(1)
+ * swaps: More swaps, Hence used in Computer graphics to detect even small changes
+ * Stable and hence it is used more
  */
 public static void bubbleSort(int[] array) {
 		
@@ -67,6 +76,11 @@ public static void bubbleSort(int[] array) {
 
 /*performs Classic Insertion Sort.
  * accepts Integer Array as argument.
+ * * Time: O(n2)
+ * Space: O(1)
+ * Best used when minimum number of elements needs to be sorted
+ * Boundary conditions: Takes maximum time to sort when in reverse order
+ * 						Takes v. less time when sorting of v. few elements
  */
 public static void insertionSort(int[] array) {
 	
